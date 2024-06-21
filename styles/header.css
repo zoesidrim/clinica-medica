@@ -1,0 +1,11 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.cabecalho__lista{
+    display: flex;
+    gap: 10px;
+}

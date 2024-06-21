@@ -1,0 +1,27 @@
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2em 1em 0em 1em;
+}
+
+.perfil__imagem {
+    border-radius: 150px;
+    width: 20%;
+    height: auto;
+}
+
+.perfil__texto {
+    padding: 1em;
+}
+
+.perfil__nome {
+    font-size: 1.37rem;
+    font-weight: 700;
+    padding-bottom: 0.7em;
+}
+
+.perfil__paragrafo {
+    color: var(--cor-detalhe);
+}
+
