@@ -264,7 +264,11 @@
 @media screen and (min-width: 1024px){
     
     .consultas__paciente{
-        margin: 1.5em 2em;
+        margin: 1em 2em;
+    }
+
+    .consultas__dia{
+        font-size: 1.2rem;
     }
 
     .consultas__blocos{
@@ -283,9 +287,30 @@
     .consultas__botao-video,
     .consultas__botao-audio {
         padding: 1em 0.3em;
+        transition: transform 200ms linear;
+    }
+
+    .consultas__botao-audio:hover {
+        transform: scale(1.2);
+    }
+
+    .consultas__botao-endereco:hover{
+        transform: scale(1.06);
     }
 
     .consultas__botao-endereco{
         margin: 1em;
-    }  
+        transition: transform 200ms linear;
+    } 
+    
+    .consultas__botao-video:hover {
+        transform: scale(1.2);
+    }
+
 }
+
+@media screen and (min-width: 1200px){
+    .consultas__botao{
+    gap: 10px;
+    }
+} 

@@ -31,4 +31,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        padding-left: 10rem;
+    }
 }

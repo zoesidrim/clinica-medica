@@ -27,6 +27,20 @@
 
 @media screen and (min-width: 500px){
     .perfil {
-        padding: 2em 3.5em 0em 2em;
+    padding: 2em 3.5em 0em 2em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+   .perfil{
+    padding-left: 3.5em;
+   }
+
+   .perfil__nome {
+    font-size: 2rem;    
+   }
+
+    .perfil__paragrafo {
+    font-size: 1.2rem;
     }
 }
