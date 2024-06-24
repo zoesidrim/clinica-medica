@@ -83,7 +83,7 @@
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    padding: 1em 2em;
+    padding: 1em;
 }
 
 .consultas__botao-video,
@@ -124,4 +124,168 @@
 
 .consultas__botao-endereco:focus{
     outline: none;
+}
+
+
+@media screen and (min-width: 500px){
+    
+    .consultas__dia{
+        margin: 2em 3.5em 0.5em 3.5em;
+    }
+
+    .consultas__paciente{
+        margin: 2em 4em 3em 4em;
+    }
+
+    .consultas__dados{
+        padding: 0 4em;  
+    }
+
+    .consultas__horario{
+        padding: 0.8em 6em;
+    }
+
+    .consultas__botao{
+        padding: 1em 3em;
+        gap: 20px;
+    }
+    
+    .consultas__botao-endereco{
+        padding: 1em;
+        margin: 1em 5em;
+    }
+}
+
+@media screen and (min-width: 650px){
+    
+    .consultas__dia{
+        margin: 2em 3em 0.5em 3em;
+    }
+
+    .consultas__paciente{
+        margin: 2em 2.5em 3em 2.5em;
+    }
+
+    .consultas__dados{
+        padding: 0 3em;  
+    }
+
+    .consultas__horario{
+        padding: 0.8em 5em;
+    }
+
+    .consultas__botao{
+        justify-content: space-between;
+        padding: 1em 3.5em;
+    }
+
+    .consultas__botao-video,
+    .consultas__botao-audio {
+    padding: 1em 3em; 
+    }
+
+    .consultas__botao-endereco{
+        padding: 1em;
+        margin: 1em 4em;
+    }  
+}
+
+@media screen and (min-width: 700px){
+    .consultas__dia{
+        margin: 2em 3.5em 0.5em 3.5em;
+    }
+
+    .consultas__paciente{
+        margin: 2em 4em 3em 4em;
+    }
+
+    .consultas__dados{
+        padding: 0 4em;  
+    }
+
+    .consultas__horario{
+        padding: 0.8em 5.5em;
+    }
+
+    .consultas__botao{
+        justify-content: space-between;
+        padding: 1em 4.5em;
+    }
+
+    .consultas__botao-video,
+    .consultas__botao-audio {
+    padding: 1em 3em; 
+    }
+
+    .consultas__botao-endereco{
+        padding: 1em;
+        margin: 1em 5em;
+    }  
+}
+
+@media screen and (min-width: 768px){
+    
+    .consultas__dia{
+        margin: 2em 2em 0.5em 2em;
+    }
+
+    .consultas__paciente{
+        margin: 1em 2em;
+    }
+    
+    .consultas__blocos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .consultas__dados{
+        padding: 0 1em;  
+    }
+
+    .consultas__horario{
+        padding: 0.8em 2.5em;
+    }
+
+    .consultas__botao{
+        padding: 1em;
+        justify-content: space-around;
+    }
+
+    .consultas__botao-video,
+    .consultas__botao-audio {
+        padding: 1em;
+    }
+
+    .consultas__botao-endereco{
+        margin: 1em 2em;
+    }  
+}
+
+@media screen and (min-width: 1024px){
+    
+    .consultas__paciente{
+        margin: 1.5em 2em;
+    }
+
+    .consultas__blocos{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .consultas__horario{
+        padding: 0.5em 1.8em;
+    }
+
+    .consultas__botao{
+        padding: 1em;
+    }
+
+    .consultas__botao-video,
+    .consultas__botao-audio {
+        padding: 1em 0.3em;
+    }
+
+    .consultas__botao-endereco{
+        margin: 1em;
+    }  
 }
