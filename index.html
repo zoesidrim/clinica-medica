@@ -231,6 +231,37 @@
         </div>
     </section>
 
+    <form class="formulario">
+        <h2 class="formulario__titulo">Formulário de Cadastro</h2>
+        <fieldset class="formulario__grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input class="campo__input" type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input class="campo__input" type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="tipo-consulta"><strong>Qual tipo de consulta</strong></label>
+            <select id="tipo-consulta" required>
+                <option selected disabled>Selecione</option>
+                <option>Consulta no local </option>
+                <option>consulta remota</option>
+            </select>   
+        </div>
+        <div class="campo">
+            <label for="data"><strong>Data da consulta:</strong></label>
+            <input class="campo__input" type="date" id="data" required>
+        </div>
+        <div class="campo">
+            <label for="observacao"><strong>Observações:</strong></label>
+            <textarea row="8" style="width: 20em" id="observacao" name="observacao"></textarea>
+        </div>
+        <button class="formulario__botao" type="submit"><strong>Salvar consulta</strong></button>
+    </form>
+
     <div>
         <input class="rodape__botao" type="checkbox" id="mais">
         <label for="mais">
@@ -245,7 +276,7 @@
             </span>
         </label>
     </div>
-    
+
     <footer class="rodape">
         <ul class="rodape__lista">
             <li><button class="rodape__lista-botao rodape__lista-consultas"><img class="rodape__icone"src="./assets/Calendarioicone.svg" alt="icone consultas">Consultas</button></li>
