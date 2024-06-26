@@ -20,7 +20,6 @@
         right: 0;
         left: 0;
         top: 0;
-        /* margin-bottom: 0.5em; */
         font-size: 1.2rem;
         font-weight: 500;
         background-color: var(--cor-destaque);
@@ -33,10 +32,9 @@
     .formulario__grupo{
         display: flex;
         gap: 20px;
-        margin-top: 3em;
     }
     
-    .campo input[type="text"], .campo input[type="date"], .campo select, .campo textarea {
+    .campo input[type="text"], .campo input[type="date"], .campo input[type="time"], .campo select, .campo textarea {
         padding: 0.4em;
         border: 1px solid var(--cor-destaque);
         box-shadow: 0 2px 4px var(--cor-destaque);
@@ -80,7 +78,24 @@
     
     .formulario__botao:hover {
         transform: scale(1.09);
-        background-color: var(--cor-formulario);
+        background-color: var(--cor-formulario-botao);
     }
 }
 
+@media screen and (min-width: 1440px){
+    .formulario{
+        margin: 2em 20em;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .formulario{
+        margin: 2em 30em;
+    }
+}
+
+@media screen and (min-width: 2500px){
+    .formulario{
+        margin: 10em 50em 5em 50em;
+    }
+}

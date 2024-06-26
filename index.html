@@ -12,7 +12,7 @@
     <title>Clinica Médica</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <!-- <header class="cabecalho">
         <h4 class="cabecalho__horario">03:33</h4>
         <div class="cabecalho__icones">
             <ul class="cabecalho__lista">
@@ -21,13 +21,13 @@
                 <li class="cabecalho__lista-item"><img src="./assets/wifi.svg" alt="icone de wifi"></li>
             </ul>
         </div>
-    </header>
+    </header> -->
 
     <section class="perfil">
         <img class="perfil__imagem" src="./assets/perfil-1.svg" alt="foto da médica Sônia">
         <div class="perfil__texto">
             <h2 class="perfil__nome">Olá, Sônia</h2>
-            <p class="perfil__paragrafo">Mais 4 consultas hoje</p>
+            <p class="perfil__paragrafo">Mais 3 consultas hoje</p>
         </div>
     </section>
 
@@ -233,6 +233,7 @@
 
     <form class="formulario">
         <h2 class="formulario__titulo">Formulário de Cadastro</h2>
+        <br><br><br>
         <fieldset class="formulario__grupo">
             <div class="campo">
                 <label for="nome"><strong>Nome</strong></label>
@@ -249,16 +250,27 @@
                 <option selected disabled>Selecione</option>
                 <option>Consulta no local </option>
                 <option>consulta remota</option>
-            </select>   
+            </select>  
         </div>
         <div class="campo">
             <label for="data"><strong>Data da consulta:</strong></label>
             <input class="campo__input" type="date" id="data" required>
         </div>
+        <fieldset class="formulario__grupo">
+            <div class="campo">
+                <label for="time">Início da consulta:</label>
+                <input type="time" id="time" name="appointment-time" min="08:00" max="18:00" step="2400" required> 
+            </div>
+            <div class="campo">
+                <label for="time">Fim da consulta:</label>
+                <input type="time" id="time" name="appointment-time" min="09:00" max="19:00" step="2400" required>
+            </div>
+        </fieldset>
         <div class="campo">
             <label for="observacao"><strong>Observações:</strong></label>
             <textarea row="8" style="width: 20em" id="observacao" name="observacao"></textarea>
         </div>
+        <br>
         <button class="formulario__botao" type="submit"><strong>Salvar consulta</strong></button>
     </form>
 
