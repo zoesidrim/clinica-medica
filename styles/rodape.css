@@ -113,7 +113,7 @@
 }
 
 @media screen and (min-width: 768px){
-    /* .rodape__lista-flutuante{
+    .rodape__lista-flutuante{
     bottom: 155px;
     right: 30px;
     margin-bottom: 0.7em;
@@ -123,11 +123,11 @@
     padding: 1.5em;
     bottom: 100px;
     right: 30px;
-    } */
-
-    .rodape__flutuante{
-        display: none;
     }
+
+    /* .rodape__flutuante{
+        display: none;
+    } */
 }
 
 @media screen and (min-width: 1024px){
